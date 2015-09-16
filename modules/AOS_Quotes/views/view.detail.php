@@ -54,7 +54,8 @@ class AOS_QuotesViewDetail extends ViewDetail {
 	
 	function displayPopupHtml(){
 		global $app_list_strings,$app_strings, $mod_strings;
-        $templates = array_keys($app_list_strings['template_ddown_c_list']);
+		asort($app_list_strings['template_ddown_c_list']);
+        	$templates = array_keys($app_list_strings['template_ddown_c_list']);
 		if($templates){
 
 		echo '	<div id="popupDiv_ara" style="display:none;position:fixed;top: 39%; left: 41%;opacity:1;z-index:9999;background:#FFFFFF;">
